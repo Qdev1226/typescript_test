@@ -40,3 +40,18 @@ for(num=0;num<=20;num++) {
    count++
 }
 console.log (" The count of odd values between 0 and 20 is: "+count)
+
+
+
+
+///function
+
+function disp_details(id:number, name:string, mail_id?: string) {
+    console.log("ID: ", id);
+    console.log("Name: ", name);
+    if(mail_id != undefined)
+        console.log("Mail Id ", mail_id);
+}
+
+disp_details(123, "John");
+disp_details(111, "Mary", "mary@xyz.com");
